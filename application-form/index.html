@@ -660,7 +660,7 @@ class="post-1507 page type-page status-publish ast-article-single" id="post-1507
 							<div class="elementor-shortcode">
 <div class="wpcf7 no-js" id="wpcf7-f1505-p1507-o1" lang="en-CA" dir="ltr" data-wpcf7-id="1505">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="https://api.web3forms.com/submit" method="post" class="static-form" aria-label="Contact form" novalidate="novalidate" data-status="init"><input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY"><input type="hidden" name="subject" value="New Rental Application - rentalskamloops.ca"><input type="hidden" name="from_name" value="Rentals Kamloops Website"><input type="checkbox" name="botcheck" class="rk-hp" style="display:none !important" tabindex="-1" autocomplete="off">
+<form action="/api/submit" method="post" class="static-form" aria-label="Contact form" novalidate="novalidate" data-status="init"><input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY"><input type="hidden" name="subject" value="New Rental Application - rentalskamloops.ca"><input type="hidden" name="from_name" value="Rentals Kamloops Website"><input type="checkbox" name="botcheck" class="rk-hp" style="display:none !important" tabindex="-1" autocomplete="off">
 <fieldset class="hidden-fields-container">
 </fieldset>
 <h2>Rental Application Form
@@ -808,7 +808,7 @@ class="post-1507 page type-page status-publish ast-article-single" id="post-1507
 <p><label>Please tell us more about yourself or add any additional info that you think may help your application:</label><br />
 <span class="static-form-control-wrap" data-name="additional-notes"><textarea cols="40" rows="10" maxlength="2000" class="static-form-control wpcf7-textarea" aria-invalid="false" placeholder="Convince us you&#039;re the perfect fit for this rental—creativity welcome, honesty preferred! 🏠✨" name="additional-notes"></textarea></span>
 </p>
-<p><input class="static-form-control wpcf7-submit has-spinner" type="submit" value="Submit" />
+<p><div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" style="margin:16px 0"></div><input class="static-form-control wpcf7-submit has-spinner" type="submit" value="Submit" />
 </p><div class="wpcf7-response-output" aria-hidden="true"></div>
 </form>
 </div>
@@ -1012,19 +1012,10 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 //# sourceURL=elementor-frontend-js-before
 </script>
 <script id="elementor-frontend-js" src="../wp-content/plugins/elementor/assets/js/frontend.min.js@ver=3.35.0"></script>
-<script id="google-recaptcha-js" src="https://www.google.com/recaptcha/api.js?render=6Lf58osqAAAAAIRy4y0g0SUBSe0ZnOXlPfUI9ROk&#038;ver=3.0"></script>
+
 <script id="wp-polyfill-js" src="../wp-includes/js/dist/vendor/wp-polyfill.min.js@ver=3.15.0"></script>
-<script id="wpcf7-recaptcha-js-before">
-var wpcf7_recaptcha = {
-    "sitekey": "6Lf58osqAAAAAIRy4y0g0SUBSe0ZnOXlPfUI9ROk",
-    "actions": {
-        "homepage": "homepage",
-        "contactform": "contactform"
-    }
-};
-//# sourceURL=wpcf7-recaptcha-js-before
-</script>
-<script id="wpcf7-recaptcha-js" src="../wp-content/plugins/contact-form-7/modules/recaptcha/index.js@ver=6.1.4"></script>
+
+
 			<script>
 			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 			</script>
@@ -1110,5 +1101,5 @@ var wpcf7_recaptcha = {
     
 </script>
 <!-- END :: Send PDF for CF7 -->
-	</body>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script></body>
 </html>
